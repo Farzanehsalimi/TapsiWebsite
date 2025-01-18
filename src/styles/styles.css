@@ -7,3 +7,14 @@
   padding: 0;
   list-style: none;
 }
+
+/* root variable */
+:root {
+  --color-primary: #ff5722;
+  --color-secondary: #ff7a50;
+  --color-secondary-light: #ffa589;
+  --color-navbar: #f8f8f8;
+  --color-headings: #000;
+  --color-body: #333333;
+  --color-white: #fff;
+}
