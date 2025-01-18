@@ -18,3 +18,13 @@
   --color-body: #333333;
   --color-white: #fff;
 }
+
+body {
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+}
