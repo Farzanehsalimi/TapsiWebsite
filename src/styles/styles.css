@@ -25,6 +25,7 @@ html {
 body {
   color: var(--color-body);
   font-size: 1.4rem;
+  line-height: 1.7;
 }
 
 h1,
@@ -55,6 +56,7 @@ h2 {
 /* buttons */
 .btn {
   font-size: 1.4rem;
+  font-weight: 700;
   cursor: pointer;
   outline: 0;
   border: 0;
@@ -133,13 +135,13 @@ h2 {
 .plan-block {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit,minmax(250px,320px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
   gap: 8rem 6rem;
 }
 .plan {
   transition: all 0.2 ease-out;
 }
-.plan:hover{
+.plan:hover {
   transform: scale(1.05);
 }
 .card {
@@ -151,7 +153,7 @@ h2 {
 .card__body {
   padding: 3rem 2.5rem;
 }
-.card__body .btn--block{
+.card__body .btn--block {
   margin-top: 8rem;
 }
 .card__header {
@@ -179,15 +181,70 @@ h2 {
   display: block;
   margin-top: 1rem;
 }
-.plan--popular{
+.plan--popular {
   transform: scale(1.1);
 }
-.plan--popular:hover{
+.plan--popular:hover {
   transform: scale(1.15);
 }
 
 /* container */
-.container{
+.container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* feature */
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.feature__title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.feature__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.feature .btn {
+  padding: 1.2rem 3rem;
+}
+.feature__img-con {
+  display: flex;
+  justify-content: center;
+}
+.feature__img {
+  max-width: 80%;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature {
+    flex-direction: row;
+  }
+  .feature__img-con {
+    flex: 1;
+    order: 2;
+  }
+  .feature__img {
+    width: 100%;
+  }
+  .feature__text-con {
+    flex: 1;
+  }
+  .feature__title {
+    font-size: 3.5rem;
+    margin-top: 0;
+  }
+  .feature__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .feature .btn {
+    font-size: 1.6rem;
+  }
 }
