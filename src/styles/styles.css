@@ -225,7 +225,7 @@ h2 {
   height: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .feature {
     flex-direction: row;
   }
@@ -768,5 +768,92 @@ input:hover {
     height: 60rem;
     width: 40rem;
     z-index: 10;
+  }
+}
+
+/* services */
+.services__section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.8rem;
+}
+.services__section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.services__tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  margin-bottom: 2rem;
+}
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #5e5e5e;
+  opacity: 0.35;
+  transition: all 0.2s ease-out;
+}
+.tab:hover {
+  opacity: 1;
+}
+.tab img {
+  max-width: 85px;
+}
+.tab span {
+  font-size: 1.2rem;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+.services__section .feature__img-con {
+  display: none;
+}
+.services__section .feature__title {
+  font-size: 1.6rem;
+}
+.tab-content {
+  margin-top: 2rem;
+  display: none;
+}
+.tab-content.active {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+.tab.active {
+  opacity: 1;
+}
+.services__section .feature__text-con {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .services__tabs {
+    margin: 5rem 0;
+  }
+  .services__section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  .tab span {
+    font-size: 1.6rem;
+  }
+  .services__section .feature__img-con {
+    display: block;
+  }
+  .services__section .feature__title {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  .services__section .feature__text-con {
+    width: 50%;
+  }
+  .services__section .feature__img {
+    max-width: 90%;
   }
 }
