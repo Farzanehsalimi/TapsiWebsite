@@ -13,6 +13,616 @@
     />
   </head>
   <body>
+    <!-- navbar -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#">
+          <img src="/src/assets/icons/logo.svg" alt="Tapsi Logo" />
+        </a>
+        <div class="nav__toggler">
+          <div class="bar bar-one"></div>
+          <div class="bar bar-two"></div>
+          <div class="bar bar-three"></div>
+        </div>
+        <ul class="list nav__items">
+          <li class="nav__item"><a href="#">ویدئو ها</a></li>
+          <li class="nav__item"><a href="#">پشتیبانی</a></li>
+          <li class="nav__item"><a href="#">امور سهام</a></li>
+          <li class="nav__item"><a href="#">تپسی پک</a></li>
+          <li class="nav__item"><a href="#">فرصت های شغلی</a></li>
+          <li class="nav__item"><a href="#">وبلاگ</a></li>
+          <li class="nav__item nav__item--btn">
+            <a href="#">
+              <button class="btn btn--primary btn--nav">دانلود تپسی</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- hero -->
+    <section class="hero-main">
+      <div class="hero__overlay-image container">
+        <img
+          class="hero__overlay-img"
+          src="/src/assets/images/mockup-phone.webp"
+          alt=""
+        />
+      </div>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="/src/assets/images/banner.webp"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/src/assets/images/banner-mobile.webp"
+            type="image/webp"
+            media="(max-width: 768px)"
+          />
+          <img
+            class="banner-img"
+            src="/src/assets/images/banner.webp"
+            alt="banner"
+          />
+        </picture>
+
+        <div class="hero__overlay-content-wrapper hero-wrapper container">
+          <div class="hero__overlay-content intro-btn">
+            <h1>تپسی</h1>
+            <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+            <div class="hero__overlay-content__btn intro-wrapper">
+              <button class="btn btn--white">
+                <img
+                  class="icon"
+                  src="/src/assets/icons/download-icon-black.svg"
+                  alt="download-icon"
+                />
+                <p>دانلود اپلیکیشن مسافران</p>
+              </button>
+              <button class="btn btn--white">
+                <img
+                  class="icon"
+                  src="/src/assets/icons/pwa-icon.svg"
+                  alt="pwa-icon"
+                />
+                <p>وب اپلیکیشن مسافران</p>
+              </button>
+              <button class="btn btn--bgc-none">
+                <img
+                  class="icon"
+                  src="/src/assets/icons/driver-icon.svg"
+                  alt="driver-icon"
+                />
+
+                <p>ثبت نام راننده خودرو</p>
+              </button>
+              <button class="btn btn--bgc-none">
+                <img
+                  class="icon"
+                  src="/src/assets/icons/motorcycle-rider-icon.svg"
+                  alt="motorcycle-rider-icon"
+                />
+                <p>ثبت نام راننده موتور</p>
+              </button>
+              <button class="btn btn--bgc-none">
+                <img
+                  class="icon"
+                  src="/src/assets/icons/download-icon-white.svg"
+                  alt="download-icon"
+                />
+                <p>دانلود اپلیکیشن رانندگان</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services container block">
+      <div class="services__section">
+        <h2>سرویس های تپسی</h2>
+        <div class="services__tabs">
+          <a class="tab active" data-tab-target="nav-classic-tab">
+            <img
+              src="/src/assets/images/tapsi-classic.png"
+              alt="tapsi-classic"
+            />
+            <span>تپسی کلاسیک</span>
+          </a>
+          <a class="tab" data-tab-target="nav-tel-tab">
+            <img src="/src/assets/images/tapsi-tel.png" alt="tapsi-tel" />
+            <span> تپسی تلفنی</span>
+          </a>
+          <a class="tab" data-tab-target="nav-line-tab">
+            <img src="/src/assets/images/tapsi-line.png" alt="tapsi-line" />
+            <span>تپسی لاین</span>
+          </a>
+          <a class="tab" data-tab-target="nav-motopeyk-tab">
+            <img src="/src/assets/images/motopeyk.png" alt="motopeyk" />
+            <span>موتوپیک</span>
+          </a>
+          <a class="tab" data-tab-target="nav-autopeyk-tab">
+            <img src="/src/assets/images/autopeyk.png" alt="autopeyk" />
+            <span>اتوپیک</span>
+          </a>
+          <a class="tab" data-tab-target="nav-plus-tab">
+            <img src="/src/assets/images/tapsi-plus.png" alt="tapsi-plus" />
+            <span>تپسی پلاس</span>
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="tab-content active" id="nav-classic-tab">
+            <div class="feature__img-con">
+              <img
+                class="feature__img"
+                src="/src/assets/images/illus-classic.webp"
+                alt="i-mac"
+              />
+            </div>
+
+            <div class="feature__text-con">
+              <h3 class="feature__title">تپسی کلاسیک</h3>
+              <p class="feature__text">
+                با سرویس کلاسیک تپسی، یک خودروی اختصاصی برای رسیدن به مقصدتان
+                دارید. تپسی کلاسیک، راهی سریع و آسان برای سفرهای درون‌شهری در هر
+                ساعتی از روز است. در این سرویس، شما امکان تعیین دو یا چند مقصد و
+                همچنین توقف در مسیر را دارید.
+              </p>
+            </div>
+          </div>
+          <div class="tab-content" id="nav-tel-tab">
+            <div class="feature__img-con">
+              <img
+                class="feature__img"
+                src="/src/assets/images/illus-tel.webp"
+                alt="i-mac"
+              />
+            </div>
+            <div class="feature__text-con">
+              <h3 class="feature__title">تپسی تلفنی</h3>
+              <p class="feature__text">
+                سرویس تپسی تلفنی یا ۱۶۳۰، این امکان را به شما می‌دهد که بدون
+                نیاز به اینترنت و اپلیکیشن، درخواست خودرو بدهید. این سرویس تاکسی
+                تلفنی مناسب زمانی است که به هر دلیلی دسترسی به اینترنت یا
+                اپلیکیشن ندارید. همچنین سرویس تلفنی تپسی، راه حلی مناسب برای
+                افرادی است که کار کردن با اپلیکیشن‌های موبایلی برایشان راحت
+                نیست.
+              </p>
+            </div>
+          </div>
+          <div class="tab-content" id="nav-line-tab">
+            <div class="feature__img-con">
+              <img
+                class="feature__img"
+                src="/src/assets/images/illus-line.webp"
+                alt="i-mac"
+              />
+            </div>
+            <div class="feature__text-con">
+              <h3 class="feature__title">تپسی لاین</h3>
+              <p class="feature__text">
+                تپسی لاین سرویسی است که امکان سفر اشتراکی را برایتان فراهم
+                می‌کند. در این سرویس شما با مسافر دیگری که هم‌مسیرتان است،
+                هم‌سفر خواهید بود و هزینه سفرتان تقسیم می‌شود.
+              </p>
+            </div>
+          </div>
+          <div class="tab-content" id="nav-motopeyk-tab">
+            <div class="feature__img-con">
+              <img
+                class="feature__img"
+                src="/src/assets/images/illus-motopeyk.webp"
+                alt="i-mac"
+              />
+            </div>
+            <div class="feature__text-con">
+              <h3 class="feature__title">موتوپیک</h3>
+              <p class="feature__text">
+                با استفاده از سرویس موتوپیک، بسته‌ها و مرسولاتتان با پیک موتور
+                به مقصد ارسال می‌شوند. این سرویس مناسب زمانی است که می‌خواهید
+                مرسوله سریع‌تر به مقصد برسد. در این سرویس، شما می‌توانید مسیر
+                رسیدن مرسوله‌تان به مقصد را به صورت لحظه‌ای روی نقشه دنبال کنید.
+              </p>
+            </div>
+          </div>
+          <div class="tab-content" id="nav-autopeyk-tab">
+            <div class="feature__img-con">
+              <img
+                class="feature__img"
+                src="/src/assets/images/illus-autopeyk.webp"
+                alt="i-mac"
+              />
+            </div>
+            <div class="feature__text-con">
+              <h3 class="feature__title">اتوپیک</h3>
+              <p class="feature__text">
+                اتوپیک سرویسی برای ارسال بسته‌های شما با خودرو است. این سرویس،
+                برای زمانی مناسب است که بسته‌های شما، با موتور قابل ارسال نیستند
+                و یا در حین جابجایی، نیاز به مراقبت بیشتری دارند. در این سرویس
+                نیز امکان رصد لحظه ‌به لحظه موقعیت مکانی مرسوله تا زمان رسیدن به
+                مقصد فراهم است.
+              </p>
+            </div>
+          </div>
+          <div class="tab-content" id="nav-plus-tab">
+            <div class="feature__img-con">
+              <img
+                class="feature__img"
+                src="/src/assets/images/illus-plus.webp"
+                alt="i-mac"
+              />
+            </div>
+
+            <div class="feature__text-con">
+              <h3 class="feature__title">تپسی پلاس</h3>
+              <p class="feature__text">
+                در سرویس پلاس تاکسی اینترنتی تپسی، خودرویی با مدل بالاتر و عمر
+                کمتر، به دنبال شما خواهد آمد. همچنین، رانندگان این سرویس
+                بالاترین امتیاز را از مسافران دریافت کرده‌اند. در این سرویس
+                امکان تعیین چند مقصد یا توقف در حین سفر، وجود دارد.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature services -->
+    <section class="feature container block">
+      <div class="feature__img-con">
+        <img
+          class="feature__img"
+          src="/src/assets/images/i-mac.png"
+          alt="i-mac"
+        />
+      </div>
+
+      <div class="feature__text-con">
+        <h2 class="feature__title">خدمات تپسی برای کسب و کار ها</h2>
+        <p class="feature__text">
+          پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست
+          هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها
+          فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و
+          ارسال کالاهای خود را به سادگی مدیریت کنید.
+        </p>
+        <button class="btn btn--primary">ورود و ثبت نام پنل سازمانی</button>
+      </div>
+    </section>
+
+    <!-- feature charge -->
+    <section class="feature feature--charge container block">
+      <div class="feature__img-con">
+        <img
+          class="feature__img"
+          src="/src/assets/images/macbook.webp"
+          alt="macbook"
+        />
+      </div>
+
+      <div class="feature__text-con">
+        <h2 class="feature__title">خرید کد اعتبار تپسی</h2>
+        <p class="feature__text">
+          کد اعتبار تپسی امکان استفاده از تخفیف در سفر با تپسی به میزان اعتبار
+          خریداری شده را برای کاربران، کسب و کارها و سازمان ها فراهم می کند.
+          تنها با صرف چند دقیقه می توانید این کد را تهیه کنید و آن را در اختیار
+          کارکنان و مشتریانتان بگذارید.
+        </p>
+        <button class="btn btn--primary">خرید کد اعتبار و تخفیف</button>
+      </div>
+    </section>
+
+    <!-- plan -->
+    <section class="plan-block container block">
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <div class="plan-intro">
+              <span class="plan__name">عادی</span>
+              <span class="badge badge--secondary">Off %20</span>
+            </div>
+            <span class="plan__price">290,000</span>
+            <span class="plan__billing-cycle">ماهانه/تومان</span>
+            <span class="plan__desc">سرویس ماشین های معمولی</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">کیفیت معمولی</li>
+              <li class="list__item">کم سر و صدا</li>
+              <li class="list__item">زمان نامحدود</li>
+              <li class="list__item">سرویس روزانه</li>
+            </ul>
+            <button class="btn btn--secondary btn--block">ثبت سفارش</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan plan--popular">
+        <div class="card card--primary">
+          <header class="card__header">
+            <div class="plan-intro">
+              <span class="plan__name">اقتصادی</span>
+              <span class="badge badge--primary">Off %20</span>
+            </div>
+            <span class="plan__price">390,000</span>
+            <span class="plan__billing-cycle">ماهانه/تومان</span>
+            <span class="plan__desc">سرویس ماشین های کلاسیک</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">کیفیت عالی</li>
+              <li class="list__item">کم سر و صدا</li>
+              <li class="list__item">زمان محدود</li>
+              <li class="list__item">سرویس روزانه</li>
+            </ul>
+            <button class="btn btn--primary btn--block">ثبت سفارش</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <div class="card card--secondary">
+          <header class="card__header">
+            <div class="plan-intro">
+              <span class="plan__name">ویژه</span>
+              <span class="badge badge--secondary">Off %20</span>
+            </div>
+            <span class="plan__price">490,000</span>
+            <span class="plan__billing-cycle">ماهانه/تومان</span>
+            <span class="plan__desc">سرویس ماشین های مدل بالا</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">کیفیت خیلی خفن</li>
+              <li class="list__item">بی سر و صدا</li>
+              <li class="list__item">زمان نامحدود</li>
+              <li class="list__item">سرویس نامحدود</li>
+            </ul>
+            <button class="btn btn--secondary btn--block">ثبت سفارش</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="contact-us-container block">
+      <div class="contact-us-top-text">
+        <h3 class="contact-us__title">ارتباط با ما</h3>
+        <p class="contact-us__desc">
+          شما می توانید نظرات و انتقادات خود را برای ما بفرستید
+        </p>
+      </div>
+
+      <div class="contact-us container">
+        <div class="contact-us__social">
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="/src/assets/icons/svg-sprite.svg#linkedin"></use>
+            </svg>
+          </span>
+
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="/src/assets/icons/svg-sprite.svg#telegram"></use>
+            </svg>
+          </span>
+
+          <span class="icon-container">
+            <svg class="icon">
+              <use xlink:href="/src/assets/icons/svg-sprite.svg#twitter"></use>
+            </svg>
+          </span>
+        </div>
+
+        <div class="contact-us__icons">
+          <div class="icon-holder">
+            <span class="icon-container">
+              <svg class="icon">
+                <use
+                  xlink:href="/src/assets/icons/svg-sprite.svg#Location"
+                ></use>
+              </svg>
+            </span>
+            <span class="icon__text">
+              ایران - خراسان رضوی - نیشابور - خیابان 21 - کوچه 101
+            </span>
+          </div>
+
+          <div class="icon-holder">
+            <span class="icon-container">
+              <svg class="icon">
+                <use
+                  xlink:href="/src/assets/icons/svg-sprite.svg#Calling"
+                ></use>
+              </svg>
+            </span>
+            <span class="icon__text">09154803601</span>
+          </div>
+
+          <div class="icon-holder">
+            <span class="icon-container">
+              <svg class="icon">
+                <use
+                  xlink:href="/src/assets/icons/svg-sprite.svg#Message"
+                ></use>
+              </svg>
+            </span>
+            <span class="icon__text">farzanehsalimi16@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="contact-us__form">
+          <h4>نظرات شما</h4>
+          <form>
+            <input type="text" placeholder="نام و نام خانوادگی" />
+            <input type="email" placeholder="ایمیل خود را وارد کنید" />
+            <textarea name="" id="" cols="20" rows="8">پیام شما</textarea>
+            <button class="btn btn--primary" type="submit">ثبت نظر</button>
+          </form>
+        </div>
+
+        <div class="contact-us__map">
+          <img
+            class="contact-us__map__img"
+            src="/src/assets/images/map.png"
+            alt="map"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-container block">
+      <div class="footer container">
+        <div class="footer__item footer__item--logo">
+          <a class="footer__logo"
+            ><img src="/src/assets/icons/Tapsi-white.svg" alt="Tapsi Logo"
+          /></a>
+          <span class="footer__title">اپلیکیشن درخواست خودرو و پیک</span>
+          <p class="footer__copy-right">
+            تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.
+          </p>
+        </div>
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="#">وبلاگ تپسی</a>
+          <a href="#">فرصت شغلی</a>
+          <a href="#">تماس با ما</a>
+          <a href="#">لوگو و هویت سازمانی</a>
+          <a href="#">استخدام بازاریاب</a>
+        </div>
+        <div class="footer__item">
+          <h6>مسافران</h6>
+          <a href="#">دانلود اپ مسافر</a>
+          <a href="#">نسخه ی وب تپسی</a>
+          <a href="#">پرسش های متداول مسافران</a>
+          <a href="#">شرایط و قوانین مسافران</a>
+          <a href="#">باشگاه مشتریان</a>
+        </div>
+        <div class="footer__item">
+          <h6>رانندگان</h6>
+          <a href="#">دانلود اپ سفیر</a>
+          <a href="#">ثبت نام راننده تاکسی اینترنتی</a>
+          <a href="#">پرسش های متداول سفیران</a>
+          <a href="#">شرایط و قوانین سفیران</a>
+          <a href="#">تپسی گاراژ</a>
+          <a href="#">ثبت نام راننده موتور</a>
+        </div>
+        <div class="footer__item">
+          <h6>کسب و کارها</h6>
+          <a href="#">پنل سازمانی تپسی</a>
+          <a href="#">خرید کد اعتبار و تخفیف</a>
+        </div>
+
+        <div class="footer__item enemad">
+          <div class="footer__enemad">
+            <img src="/src/assets/images/enemad.png" alt="enemad" />
+          </div>
+          <div class="footer__enemad">
+            <img
+              src="/src/assets/images/neshan-meli-sabt.jpg"
+              alt="neshan-meli-sabt"
+            />
+          </div>
+          <div class="footer__enemad">
+            <img src="/src/assets/images/enemad.ir.png" alt="enemad.ir" />
+          </div>
+        </div>
+
+        <p class="footer__copy-right-mobile">
+          تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.
+        </p>
+        <div class="footer__social">
+          <span class="footer__social__title">تپسی در شبکه های اجتماعی</span>
+          <div class="footer__social-icons">
+            <span class="icon-container">
+              <svg
+                class="icon"
+                width="10"
+                height="20"
+                viewBox="0 0 10 20"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.04623 3.865V6.613H0.0322266V9.973H2.04623V19.959H6.18023V9.974H8.95523C8.95523 9.974 9.21523 8.363 9.34123 6.601H6.19723V4.303C6.19723 3.96 6.64723 3.498 7.09323 3.498H9.34723V0H6.28323C1.94323 0 2.04623 3.363 2.04623 3.865Z"
+                />
+              </svg>
+            </span>
+
+            <span class="icon-container">
+              <svg
+                class="icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.017 2H7.947C6.37015 2.00185 4.85844 2.62914 3.74353 3.74424C2.62862 4.85933 2.00159 6.37115 2 7.948L2 16.018C2.00185 17.5948 2.62914 19.1066 3.74424 20.2215C4.85933 21.3364 6.37115 21.9634 7.948 21.965H16.018C17.5948 21.9631 19.1066 21.3359 20.2215 20.2208C21.3364 19.1057 21.9634 17.5938 21.965 16.017V7.947C21.9631 6.37015 21.3359 4.85844 20.2208 3.74353C19.1057 2.62862 17.5938 2.00159 16.017 2V2ZM19.957 16.017C19.957 16.5344 19.8551 17.0468 19.6571 17.5248C19.4591 18.0028 19.1689 18.4371 18.803 18.803C18.4371 19.1689 18.0028 19.4591 17.5248 19.6571C17.0468 19.8551 16.5344 19.957 16.017 19.957H7.947C6.90222 19.9567 5.90032 19.5415 5.16165 18.8026C4.42297 18.0638 4.008 17.0618 4.008 16.017V7.947C4.00827 6.90222 4.42349 5.90032 5.16235 5.16165C5.90122 4.42297 6.90322 4.008 7.948 4.008H16.018C17.0628 4.00827 18.0647 4.42349 18.8034 5.16235C19.542 5.90122 19.957 6.90322 19.957 7.948V16.018V16.017Z"
+                />
+                <path
+                  d="M11.9818 6.81885C10.6133 6.82096 9.30136 7.36563 8.33372 8.33345C7.36609 9.30127 6.82168 10.6133 6.81982 11.9818C6.82141 13.3508 7.36585 14.6632 8.33372 15.6312C9.3016 16.5993 10.6139 17.144 11.9828 17.1458C13.3519 17.1443 14.6645 16.5997 15.6326 15.6316C16.6007 14.6635 17.1452 13.3509 17.1468 11.9818C17.1447 10.6129 16.5998 9.30073 15.6315 8.33304C14.6633 7.36535 13.3507 6.82117 11.9818 6.81985V6.81885ZM11.9818 15.1378C11.1451 15.1378 10.3426 14.8054 9.7509 14.2138C9.15922 13.6221 8.82682 12.8196 8.82682 11.9828C8.82682 11.1461 9.15922 10.3436 9.7509 9.75193C10.3426 9.16025 11.1451 8.82785 11.9818 8.82785C12.8186 8.82785 13.6211 9.16025 14.2127 9.75193C14.8044 10.3436 15.1368 11.1461 15.1368 11.9828C15.1368 12.8196 14.8044 13.6221 14.2127 14.2138C13.6211 14.8054 12.8186 15.1378 11.9818 15.1378Z"
+                />
+                <path
+                  d="M17.1559 8.09509C17.8391 8.09509 18.3929 7.54127 18.3929 6.85809C18.3929 6.17492 17.8391 5.62109 17.1559 5.62109C16.4728 5.62109 15.9189 6.17492 15.9189 6.85809C15.9189 7.54127 16.4728 8.09509 17.1559 8.09509Z"
+                />
+              </svg>
+            </span>
+
+            <span class="icon-container">
+              <svg
+                class="icon"
+                width="20"
+                height="17"
+                viewBox="0 0 20 17"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 1.90716C19.2504 2.23454 18.4565 2.4492 17.644 2.54416C18.4968 2.0434 19.138 1.24927 19.448 0.310164C18.64 0.780492 17.7587 1.11177 16.841 1.29016C16.4545 0.88537 15.9897 0.563551 15.4748 0.344342C14.9598 0.125133 14.4056 0.0131294 13.846 0.0151639C11.58 0.0151639 9.743 1.82516 9.743 4.05516C9.743 4.37116 9.779 4.68016 9.849 4.97516C8.22358 4.89786 6.63212 4.48257 5.17617 3.7558C3.72022 3.02903 2.43176 2.00674 1.393 0.754164C1.02883 1.36857 0.837415 2.06994 0.839 2.78416C0.839697 3.45213 1.00683 4.10939 1.32529 4.69656C1.64375 5.28372 2.1035 5.78228 2.663 6.14716C2.01248 6.12616 1.37602 5.95249 0.805 5.64016V5.69016C0.805 7.64816 2.22 9.28116 4.095 9.65316C3.74261 9.74666 3.37958 9.79406 3.015 9.79416C2.75 9.79416 2.493 9.76916 2.242 9.71916C2.51008 10.5271 3.02311 11.2315 3.70982 11.7345C4.39653 12.2375 5.22284 12.5142 6.074 12.5262C4.61407 13.6507 2.82182 14.2582 0.979 14.2532C0.647 14.2532 0.321 14.2332 0 14.1972C1.88125 15.3879 4.06259 16.0184 6.289 16.0152C13.836 16.0152 17.962 9.85816 17.962 4.51916L17.948 3.99616C18.7529 3.42983 19.4481 2.72201 20 1.90716Z"
+                />
+              </svg>
+            </span>
+
+            <span class="icon-container">
+              <svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.959 11.7189V19.0979H15.681V12.2129C15.681 10.4829 15.062 9.30288 13.514 9.30288C12.332 9.30288 11.628 10.0989 11.319 10.8679C11.206 11.1429 11.177 11.5259 11.177 11.9109V19.0979H6.897C6.897 19.0979 6.955 7.43788 6.897 6.22888H11.177V8.05288L11.149 8.09488H11.177V8.05288C11.745 7.17788 12.76 5.92688 15.033 5.92688C17.848 5.92688 19.959 7.76688 19.959 11.7189ZM2.421 0.0258789C0.958 0.0258789 0 0.985879 0 2.24888C0 3.48388 0.93 4.47288 2.365 4.47288H2.393C3.886 4.47288 4.813 3.48388 4.813 2.24888C4.787 0.985879 3.887 0.0258789 2.422 0.0258789H2.421ZM0.254 19.0979H4.532V6.22888H0.254V19.0979Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+
+            <span class="icon-container">
+              <svg
+                class="icon"
+                width="20"
+                height="14"
+                viewBox="0 0 20 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.812 0.0171133H4.145C1.855 0.0171133 0 1.85211 0 4.11611V9.88411C0 12.1481 1.856 13.9841 4.145 13.9841H15.812C18.102 13.9841 19.957 12.1481 19.957 9.88411V4.11611C19.957 1.85211 18.101 0.0161133 15.812 0.0161133V0.0171133ZM13.009 7.28011L7.552 9.85511C7.51872 9.87114 7.48192 9.87848 7.44503 9.87647C7.40815 9.87445 7.37237 9.86313 7.34103 9.84357C7.3097 9.82401 7.28382 9.79684 7.2658 9.76459C7.24779 9.73234 7.23822 9.69605 7.238 9.65911V4.35011C7.23867 4.31299 7.24872 4.27663 7.26722 4.24444C7.28573 4.21224 7.31208 4.18526 7.34382 4.16599C7.37556 4.14673 7.41167 4.13581 7.44877 4.13425C7.48587 4.1327 7.52276 4.14057 7.556 4.15711L13.014 6.89211C13.0504 6.91024 13.0809 6.93826 13.102 6.97294C13.1232 7.00762 13.1341 7.04756 13.1336 7.08818C13.1331 7.1288 13.1211 7.16845 13.0991 7.20258C13.077 7.2367 13.0458 7.26392 13.009 7.28111V7.28011Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="/src/js/main.js"></script>
   </body>
 </html>
