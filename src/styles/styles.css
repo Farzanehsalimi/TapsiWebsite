@@ -923,7 +923,7 @@ input:hover {
   gap: 0.5rem;
 }
 .travel__overlay__header .badge {
-  padding: 0rem 1.2rem;
+  padding: 0rem 1rem;
 }
 .travel__list {
   display: flex;
@@ -1026,6 +1026,12 @@ input:hover {
 .accordion__expanded .accordion__header .icon {
   transform: rotate(180deg);
   transition: all 0.3s ease-out;
+}
+.accordion-one {
+  border-bottom: 1px solid #ddd;
+}
+.accordion-one .accordion__content {
+  margin-bottom: 2rem;
 }
 .accordion-two {
   margin-bottom: 2rem;
